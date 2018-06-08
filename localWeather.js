@@ -2,7 +2,7 @@ $(document).ready(function(){
 	var fTemp,kTemp,cTemp,weatherType,city,windspeed;
 	var tempSwap=true;
 	var loc;
-	   $.getJSON("http://ipinfo.io", function(d){
+	   $.getJSON("https://ipinfo.io", function(d){
       loc = d.loc.split(",");
 	  console.log(loc);
     var api =  'https://api.openweathermap.org/data/2.5/weather?lat='+loc[0]+'&lon='+loc[1]+'&APPID=4cbdf6e71dd026956ce6baddc19cdaed';
