@@ -5,7 +5,7 @@ $(document).ready(function(){
 	   $.getJSON("http://ipinfo.io", function(d){
       loc = d.loc.split(",");
 	  console.log(loc);
-    var api =  'http://api.openweathermap.org/data/2.5/weather?lat='+loc[0]+'&lon='+loc[1]+'&APPID=4cbdf6e71dd026956ce6baddc19cdaed';
+    var api =  'https://api.openweathermap.org/data/2.5/weather?lat='+loc[0]+'&lon='+loc[1]+'&APPID=4cbdf6e71dd026956ce6baddc19cdaed';
 	    console.log(api);
 	 $.getJSON(api, function(data){
         
